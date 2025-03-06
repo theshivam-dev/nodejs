@@ -11,6 +11,8 @@
   - ["Top-level" means outside of any function.]
 - In CommonJS (CJS), `module.exports` can only export **one value** (an object, function, or class)
   - This is because `require()` returns only one value (not multiple)
+- **Strict mode is NOT enabled by default**
+- In CommonJS (CJS), you can use `__filename` and `__dirname` to get the current file path and directory path
 
 ---
 
@@ -28,6 +30,8 @@
   - You can use `await` directly at the top level of a module without wrapping it inside an `async` function
 - In ES6 Modules, you can use **named exports** to export **multiple values separately**
   - This is because `import` works differently—it allows multiple imports
+- **Strict mode is enabled by default**
+- In ES6, `import.meta.filename` and `import.meta.dirname` can be used to get the current file and directory path
 
 ---
 
