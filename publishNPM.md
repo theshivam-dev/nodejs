@@ -55,7 +55,21 @@ Enter your username, password, and email associated with your npm account.
    ```
    If using a scoped package (`@your-username/package-name`), add `"private": false` in `package.json`.
 
-## Step 7: Verify Your Package
+## Step 7: Update Your Package
+
+When making updates, you need to increment the version number before publishing again:
+1. Update the version in `package.json`. You can do this automatically using npm:
+   ```sh
+   npm version patch  # For small fixes
+   npm version minor  # For backward-compatible changes
+   npm version major  # For breaking changes
+   ```
+2. Publish the updated package:
+   ```sh
+   npm publish
+   ```
+
+## Step 8: Verify Your Package
 
 Search for your package on [npm](https://www.npmjs.com/) or install it in a test project:
 ```sh
