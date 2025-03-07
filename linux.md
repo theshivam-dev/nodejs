@@ -152,18 +152,3 @@ In Linux, the **file system structure** follows a **hierarchical tree format** s
 
 ---
 
-## **Want a Hands-On Task?**
-Try these commands in your terminal:
-
-```bash
-ls /
-ls /etc
-ls /home
-cat /proc/cpuinfo
-df -h   # Check disk usage of each directory
-du -sh /var/log  # Check log file size
-```
-
-This will help you explore the Linux file system practically!  
-
-Let me know if you need more details. 🚀
